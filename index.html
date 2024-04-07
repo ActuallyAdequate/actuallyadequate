@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actually Adequate</title>
+    <!-- Include htmx library -->
+    <script src="https://unpkg.com/htmx.org@^1.5.0/dist/htmx.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <!-- JS -->
+    <script src="src/js/themetoggle.js"></script>
+    <script src="src/js/navbar_dropdown.js"></script>
+  </head>
+  <body>
+    <header hx-get="src/html/nav.html" hx-trigger="load"></header>
+  </body>
+</html>

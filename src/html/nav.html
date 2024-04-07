@@ -1,0 +1,32 @@
+<nav class="navbar">
+  <a class="navbar-brand" href="http://actuallyadequate.com"
+    ><span
+      hx-trigger="load"
+      hx-get="/src/assets/actuallyadequate_logo.svg"
+    ></span
+  ></a>
+  <div class="navbar-toggle" onclick="toggleNav()">
+    <svg
+      width="100%"
+      height="100%"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 448 512"
+    >
+      <path
+        d="M0,96c0,-17.7 14.3,-32 32,-32l384,0c17.7,0 32,14.3 32,32c0,17.7 -14.3,32 -32,32l-384,0c-17.7,0 -32,-14.3 -32,-32Zm0,160c0,-17.7 14.3,-32 32,-32l384,0c17.7,0 32,14.3 32,32c0,17.7 -14.3,32 -32,32l-384,0c-17.7,0 -32,-14.3 -32,-32Zm448,160c0,17.7 -14.3,32 -32,32l-384,0c-17.7,0 -32,-14.3 -32,-32c0,-17.7 14.3,-32 32,-32l384,0c17.7,0 32,14.3 32,32Z"
+      ></path>
+    </svg>
+  </div>
+  <div class="navbar-nav" id="navbar-list">
+    <a class="nav-link" href="https://projects.actuallyadequate.com">Home</a>
+    <a class="nav-link" href="https://portfolio.actuallyadequate.com"
+      >Portfolio</a
+    >
+  </div>
+  <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" />
+      <div class="slider round"></div>
+    </label>
+  </div>
+</nav>
