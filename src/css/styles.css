@@ -38,12 +38,7 @@ body {
 .navbar {
     display:flex;
     align-items: center;
-    background-color: var(--secondary);
-    padding: 1rem;
-}
-
-.navbar-nav {
-    background-color: var(--secondary);
+    padding: 0.5rem;
 }
 
 .navbar-brand {
@@ -52,13 +47,21 @@ body {
 }
 
 .nav-link {
-    margin-right: 1rem;
+    margin-right: 1em;
     text-decoration: none;
     color: var(--action);
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
+.brand-primary {
+  fill: var(--action);
+}
 
+.brand-secondary {
+  fill: var(--text);
+}
+
+/* Navabar Toggle */
   
 .navbar-toggle {
     width:2em;
@@ -70,20 +73,12 @@ body {
     fill: var(--text);
 }
 
-.brand-primary {
-    fill: var(--action);
-}
-
-.brand-secondary {
-    fill: var(--background);
-}
-
 @media (max-width: 768px) {
     .navbar-nav {
         display: none;
         flex-direction: column;
         width: calc(100% - 2rem);
-        padding: 1rem;
+        padding: 0em 1em 1em 1em;
         position: absolute;
         left:0;
         top: 5em;
@@ -98,6 +93,7 @@ body {
         display: block;
     }
 }
+
 /* Theme Switcher Styling */
 .theme-switch-wrapper {
     display: flex;
