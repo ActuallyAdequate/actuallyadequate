@@ -6,7 +6,7 @@ function toggleNav() {
 
     const navbarToggle = document.getElementById('navbar-toggle');
     navbarToggle.classList.toggle('active');
-    navbarToggle.setAttribute("hx-get", (navbarToggle.classList.contains('active') ? '/src/assets/close.svg' : '/src/assets/hamburger_menu.svg'));
+    navbarToggle.setAttribute("hx-get", (navbarToggle.classList.contains('active') ? 'https://actuallyadequate.com/src/assets/close.svg' : 'https://actuallyadequate.com/src/assets/hamburger_menu.svg'));
     htmx.process("#navbar-toggle");
     htmx.trigger("#navbar-toggle", 'load');
 }
